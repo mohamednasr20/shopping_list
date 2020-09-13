@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <title>Shopping List</title>
+  </head>
+    <header class="bg-info p-3">
+    
+        <h1 class="text-light pl-4">
+          <i class="fas fa-shopping-cart mr-2"></i>Shopping List
+        </h1>
+        <div class="text-right">
+          <button id="clear-btn" class="btn btn-info border col-2">
+            Clear All
+          </button>
+        </div>
+      
+    </header>
+    <div class="container">
+        <h3 class="my-3">Add Item</h3>
+       
+      <form>
+        <div class="row">
+          <div class="col-6 mb-4">
+            <input
+              type="text"
+              id="item-name"
+              class="form-control"
+              placeholder="Add Item"
+            />
+          </div>
+          <div class="col-6 mb-4">
+            <input
+              type="text"
+              id="item-quantity"
+              class="form-control"
+              placeholder="Quantity"
+            />
+          </div>
+          <button id="add-btn" class="btn btn-info  m-3">
+            <i class="fas fa-plus-circle m-2"></i>Add Item
+          </button>
+          
+          <div id="update-state" class="row col-10 d-none">
+            <button id="delete-btn" class="btn btn-danger col-3 m-1">
+              <i class="fas fa-trash-alt m-2"></i>Delete
+            </button>
+            <button id="edit-btn" class="btn btn-warning m-1 col-3">
+              <i class="fas fa-pencil-alt m-2"></i>Edit
+            </button>
+            <button id="back-btn" class="btn btn-secondary m-1 col-3 ml-auto">
+              <i class="fas fa-backward m-2"></i>Back
+            </button>
+         
+          </div>
+        </div>
+      </form>
+    
+        
+      
+      <ul class="list-group my-4" data-index=""></ul>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
